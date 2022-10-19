@@ -1,6 +1,6 @@
 # A demo on `PodDisruptionBudget`
 
-This is a very simple project to demonstrate the capability of `PodDisruptionBudget`.
+This is a very simple project to demonstrate the capability of `PodDisruptionBudget`.When pdb is being set inside your cluster, what will happen is controller manager will honour the clause by maintaining a minimum count of available replicas. In example 1, that would mean a pod will be spawned on another node before the original node is scraped. In example 2, nginx-1 will spawn onto another node before nginx-2, and in turn, node B, is destroyed.
 
 ## Prerequisite
 
